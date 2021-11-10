@@ -355,8 +355,8 @@ button:hover {
 .servicios-card {
   margin: 20px;
   display: grid;
-  width: 200px;
-  height: 300px;
+  width: 180px;
+  height: 270px;
   background: rgb(255, 255, 255);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
   border-radius: 18px;
@@ -393,29 +393,46 @@ button:hover {
   margin: 50px;
 }
 
+.tarjetas-directores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 .directores-item {
-  margin: 50px;
+  position: relative;
+  margin: 20px;
   padding: 50px;
   display: grid;
-  height: 600px;
+  width: 40%;
+  height: 700px;
   background-color: rgb(0, 0, 0);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
   border-radius: 18px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 60%;
   grid-gap: 5px;
 }
 
 .illustration-directores {
+  position: relative;
+  top: -25%;
   margin: auto;
   padding: 25px;
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
+.mel {
+  top: -60%;
+}
+
 .illustration-directores img {
   display: block;
-  width: 100%;
+  clip-path: circle(100px at center);
+  width: 200px;
 }
 
 .text-dir {
@@ -427,18 +444,21 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-column: 2/3;
-  grid-row: 1/2;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 .text-dir h1 {
-  margin: 100px;
+  text-align: center;
+  margin: auto;
 }
 
 .text-dir p {
-  margin: 150px;
+  margin: auto;
   text-align: justify;
 }
+/*
+*/
 /*Directores*/
 
 /* Directores de Departamento */
@@ -723,6 +743,11 @@ textarea.input {
   line-height: 1.2;
 }
 
+#map img {
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
 /* Contacto */
 @media screen and (max-width: 768px) {
   .container {
